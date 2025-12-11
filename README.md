@@ -1,7 +1,6 @@
 # РЕЗУЛЬТАТИ ВИКОНАННЯ
 ```
-PS D:\НАВЧАННЯ\Бази даних\college-schedule-app-25-postgres\college-schedule-app-25-postgres> mvn clean compile exec:java
-Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8
+PPS D:\НАВЧАННЯ\Бази даних\veterinary-app-25-postgres\veterinary-app-25-postgres> mvn exec:java -D"exec.mainClass=com.veterinary.VeterinaryApplication"
 [INFO] Scanning for projects...
 [INFO] 
 [INFO] ------------------< com.veterinary:college-schedule >-------------------
@@ -9,153 +8,68 @@ Picked up JAVA_TOOL_OPTIONS: -Dfile.encoding=UTF-8
 [INFO]   from pom.xml
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
-[INFO] --- clean:3.2.0:clean (default-clean) @ college-schedule ---
-[INFO] Deleting D:\НАВЧАННЯ\Бази даних\college-schedule-app-25-postgres\college-schedule-app-25-postgres\target
-[INFO]
-[INFO] --- resources:3.3.1:resources (default-resources) @ college-schedule ---
-[INFO] Copying 2 resources from src\main\resources to target\classes
-[INFO]
-[INFO] --- compiler:3.13.0:compile (default-compile) @ college-schedule ---
-[INFO] Recompiling the module because of changed source code.
-[INFO] Compiling 6 source files with javac [debug target 1.8] to target\classes
-[WARNING] bootstrap class path is not set in conjunction with -source 8
-  not setting the bootstrap class path may lead to class files that cannot run on JDK 8
-    --release 8 is recommended instead of -source 8 -target 1.8 because it sets the bootstrap class path automatically
-[WARNING] source value 8 is obsolete and will be removed in a future release
-[WARNING] target value 8 is obsolete and will be removed in a future release
-[WARNING] To suppress warnings about obsolete options, use -Xlint:-options.
-[INFO]
-[INFO] --- exec:3.1.0:java (default-cli) @ college-schedule ---
-груд. 11, 2025 8:20:53 ПП org.hibernate.Version logVersion
-INFO: HHH000412: Hibernate ORM core version 5.6.14.Final
-груд. 11, 2025 8:20:53 ПП org.hibernate.boot.jaxb.internal.stax.LocalXmlResourceResolver resolveEntity
-WARN: HHH90000012: Recognized obsolete hibernate namespace http://hibernate.sourceforge.net/hibernate-configuration. Use namespace http://www.hibernate.org/dtd/hibernate-configuration instead.  Support for obsolete DTD/XSD namespaces may be removed at any time.
-груд. 11, 2025 8:20:53 ПП org.hibernate.annotations.common.reflection.java.JavaReflectionManager <clinit>
-INFO: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-груд. 11, 2025 8:20:53 ПП org.hibernate.engine.jdbc.connections.internal.ConnectionProviderInitiator instantiateC3p0Provider
-WARN: HHH000022: c3p0 properties were encountered, but the c3p0 provider class was not found on the classpath; these properties are going to be ignored.
-груд. 11, 2025 8:20:53 ПП org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
-WARN: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
-груд. 11, 2025 8:20:53 ПП org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
-INFO: HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/vet_clinik]
-груд. 11, 2025 8:20:53 ПП org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
-INFO: HHH10001001: Connection properties: {user=postgres, password=****}
-груд. 11, 2025 8:20:53 ПП org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
-INFO: HHH10001003: Autocommit mode: false
-груд. 11, 2025 8:20:53 ПП org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PooledConnections <init>
-INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
-груд. 11, 2025 8:20:53 ПП org.hibernate.dialect.Dialect <init>
-INFO: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-Hibernate: 
+[INFO] --- exec:3.6.2:java (default-cli) @ college-schedule ---
 
-    alter table appointment
-       drop constraint FK8y0it8yrd322ps2jklm5f8e07
-груд. 11, 2025 8:20:54 ПП org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
-INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5b66d64] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-Hibernate:
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.5.4)
 
-    alter table appointment
-       drop constraint FK97ym201tvtxg3slhf3khn36ye
-Hibernate: 
+2025-12-11 23:50:37.360  INFO 25620 --- [lication.main()] com.veterinary.VeterinaryApplication     : Starting VeterinaryApplication using Java 23.0.1 on DESKTOP-PIFQVGS with PID 25620 (D:\╨Э╨Р╨Т╨з╨Р╨Э╨Э╨п\╨С╨░╨╖╨╕ ╨┤╨░╨╜╨╕╤Е\veterinary-app-25-postgres\veterinary-app-25-postgres\target\classes started by YOONGIA in D:\╨Э╨Р╨Т╨з╨Р╨Э╨Э╨п\╨С╨░╨╖╨╕ ╨┤╨░╨╜╨╕╤Е\veterinary-app-25-postgres\veterinary-app-25-postgres)
+2025-12-11 23:50:37.363  INFO 25620 --- [lication.main()] com.veterinary.VeterinaryApplication     : No active profile set, falling back to default profiles: default
+2025-12-11 23:50:37.865  INFO 25620 --- [lication.main()] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2025-12-11 23:50:37.942  INFO 25620 --- [lication.main()] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 1 MongoDB repository interfaces.
+2025-12-11 23:50:38.395  INFO 25620 --- [lication.main()] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2025-12-11 23:50:38.494  INFO 25620 --- [localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:45}] to localhost:27017
+2025-12-11 23:50:38.494  INFO 25620 --- [localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:46}] to localhost:27017
+2025-12-11 23:50:38.494  INFO 25620 --- [localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=25, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=27270400}
+2025-12-11 23:50:38.844  INFO 25620 --- [lication.main()] com.veterinary.VeterinaryApplication     : Started VeterinaryApplication in 1.974 seconds (JVM running for 5.899)
 
-    alter table pet
-       drop constraint FK7qfti9yba86tgfe9oobeqxfxg
-Hibernate:
+--- ВЕТЕРИНАРНА КЛ?Н?КА ---
+1. Завантажити дан? з CSV файлу
+2. Переглянути вс? записи
+3. Видалити вс? записи
+4. Вих?д
+Ваш виб?р: 1
+2025-12-11 23:50:40.871  INFO 25620 --- [lication.main()] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:47}] to localhost:27017
+Усп?шно додано 12 запис?в до бази MongoDB.
 
-    drop table if exists appointment cascade
-Hibernate:
+--- ВЕТЕРИНАРНА КЛ?Н?КА ---
+1. Завантажити дан? з CSV файлу
+2. Переглянути вс? записи
+3. Видалити вс? записи
+4. Вих?д
+Ваш виб?р: 2
+Запис в?зиту {id='693b3cb0067df63bb0ab7e92', Власник='Коваленко Олег ?ванович', Тварина='Барс?к (к?т)', Л?кар='Петренко ?рина Васил?вна', Дата='2024-09-14', Час='10:00', Д?агноз='Щеплення комплексною вакциною', Адреса='м. Київ, вул. Шевченка, 12, кв.5', Вакцинац?я='Так', Стаж л?каря='5', Контакти='380501234567'}
+Запис в?зиту {id='693b3cb0067df63bb0ab7e93', Власник='Сидоренко Мар?я Олекс?ївна', Тварина='Рекс (собака)', Л?кар='Петренко ?рина Васил?вна', Дата='2024-09-14', Час='11:30', Д?агноз='Щеплення в?д сказу', Адреса='м. Київ, вул. Лес? Українки, 3', Вакцинац?я='Так', Стаж л?каря='5', Контакти='380661234567'}
+Запис в?зиту {id='693b3cb0067df63bb0ab7e94', Власник='Бондаренко Дмитро Серг?йович', Тварина='Муся (к?шка)', Л?кар='?ваненко Андр?й Миколайович', Дата='2024-09-14', Час='14:20', Д?агноз='Огляд п?сля операц?ї', Адреса='м. Київ, просп. Перемоги, 33', Вакцинац?я='Н?', Стаж л?каря='3', Контакти='380731234567'}
+Запис в?зиту {id='693b3cb0067df63bb0ab7e95', Власник='Ткаченко Юл?я ?гор?вна', Тварина='Джек (собака)', Л?кар='?ваненко Андр?й Миколайович', Дата='2024-09-14', Час='15:30', Д?агноз='Чищення зуб?в', Адреса='м. Київ, вул. Хрещатик, 25', Вакцинац?я='Н?', Стаж л?каря='3', Контакти='380671234567'}
+Запис в?зиту {id='693b3cb0067df63bb0ab7e96', Власник='Кравченко Серг?й Володимирович', Тварина='З?рка (к?шка)', Л?кар='Мельник Оксана Петр?вна', Дата='2024-09-15', Час='09:15', Д?агноз='Л?кування захворювання шк?ри', Адреса='м. Київ, вул. Саксаганського, 7', Вакцинац?я='Н?', Стаж л?каря='7', Контакти='380631234567'}
+Запис в?зиту {id='693b3cb0067df63bb0ab7e97', Власник='Марченко ?рина Олег?вна', Тварина='Буч (собака)', Л?кар='Мельник Оксана Петр?вна', Дата='2024-09-15', Час='11:00', Д?агноз='Щеплення комплексною вакциною', Адреса='м. Київ, вул. Богдана Хмельницького, 40', Вакцинац?я='Так', Стаж л?каря='7', Контакти='380501234568'}
+Запис в?зиту {id='693b3cb0067df63bb0ab7e98', Власник='Шевчук Павло Михайлович', Тварина='С?мба (к?т)', Л?кар='Петренко ?рина Васил?вна', Дата='2024-09-15', Час='14:45', Д?агноз='Кастрац?я', Адреса='м. Київ, вул. Антоновича, 72', Вакцинац?я='Н?', Стаж л?каря='5', Контакти='380661234568'}
+Запис в?зиту {id='693b3cb0067df63bb0ab7e99', Власник='Гончарук Натал?я В?ктор?вна', Тварина='Ласка (собака)', Л?кар='?ваненко Андр?й Миколайович', Дата='2024-09-16', Час='10:30', Д?агноз='Щеплення в?д сказу', Адреса='м. Київ, вул. Велика Васильк?вська, 5', Вакцинац?я='Так', Стаж л?каря='3', Контакти='380731234568'}
+Запис в?зиту {id='693b3cb0067df63bb0ab7e9a', Власник='Лисенко Артем Олегович', Тварина='Мурка (к?шка)', Л?кар='Мельник Оксана Петр?вна', Дата='2024-09-16', Час='12:15', Д?агноз='Л?кування кон'юнктив?ту', Адреса='м. Київ, вул. Дегтяр?вська, 33', Вакцинац?я='Н?', Стаж л?каря='7', Контакти='380671234568'}
+Запис в?зиту {id='693b3cb0067df63bb0ab7e9b', Власник='Павленко Катерина Серг?ївна', Тварина='Тедд? (собака)', Л?кар='Петренко ?рина Васил?вна', Дата='2024-09-16', Час='15:00', Д?агноз='Щеплення комплексною вакциною', Адреса='м. Київ, вул. Євгена Коновальця, 18', Вакцинац?я='Так', Стаж л?каря='5', Контакти='380631234568'}
+Запис в?зиту {id='693b3cb0067df63bb0ab7e9c', Власник='Ковальчук Михайло ?ванович', Тварина='Рудь (к?т)', Л?кар='?ваненко Андр?й Миколайович', Дата='2024-09-17', Час='09:45', Д?агноз='Огляд п?сля л?кування', Адреса='м. Київ, вул. Дорогожицька, 2', Вакцинац?я='Н?', Стаж л?каря='3', Контакти='380501234569'}
+Запис в?зиту {id='693b3cb0067df63bb0ab7e9d', Власник='Бондаренко Дмитро Серг?йович', Тварина='Муся (к?шка)', Л?кар='Мельник Оксана Петр?вна', Дата='2024-09-17', Час='13:30', Д?агноз='Щеплення комплексною вакциною', Адреса='м. Київ, просп. Перемоги, 33', Вакцинац?я='Так', Стаж л?каря='7', Контакти='380661234569'}
 
-    drop table if exists owner cascade
-Hibernate: 
+--- ВЕТЕРИНАРНА КЛ?Н?КА ---
+1. Завантажити дан? з CSV файлу
+2. Переглянути вс? записи
+3. Видалити вс? записи
+4. Вих?д
+Ваш виб?р: 3
+Вс? записи видалено.
 
-    drop table if exists pet cascade
-Hibernate:
-
-    drop table if exists veterinarian cascade
-Hibernate: 
-
-    create table appointment (
-       appointment_id  serial not null,
-        appointment_date date not null,
-        appointment_time time not null,
-        diagnosis_treatment varchar(255) not null,
-        is_vaccinated boolean not null,
-        pet_id int4 not null,
-        vet_id int4 not null,
-        primary key (appointment_id)
-    )
-груд. 11, 2025 8:20:54 ПП org.hibernate.resource.transaction.backend.jdbc.internal.DdlTransactionIsolatorNonJtaImpl getIsolatedConnection
-INFO: HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@62cbe38c] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
-Hibernate: 
-
-    create table owner (
-       owner_id  serial not null,
-        apartment varchar(255),
-        city varchar(255),
-        first_name varchar(255),
-        house varchar(255),
-        last_name varchar(255),
-        middle_name varchar(255),
-        phone varchar(255),
-        street varchar(255),
-        primary key (owner_id)
-    )
-Hibernate: 
-
-    create table pet (
-       pet_id  serial not null,
-        name varchar(255) not null,
-        species varchar(255),
-        owner_id int4 not null,
-        primary key (pet_id)
-    )
-Hibernate: 
-
-    create table veterinarian (
-       vet_id  serial not null,
-        experience_years int4,
-        full_name varchar(255) not null,
-        primary key (vet_id)
-    )
-Hibernate:
-
-    alter table owner
-       add constraint UK_q3nfx0w9lmfnyeepg23ccenhu unique (phone)
-Hibernate: 
-
-    alter table appointment
-       add constraint FK8y0it8yrd322ps2jklm5f8e07
-       foreign key (pet_id)
-       references pet
-Hibernate:
-
-    alter table appointment
-       add constraint FK97ym201tvtxg3slhf3khn36ye
-       foreign key (vet_id)
-       references veterinarian
-Hibernate:
-
-    alter table pet
-       add constraint FK7qfti9yba86tgfe9oobeqxfxg
-       foreign key (owner_id)
-       references owner
->>> Програма 'Ветеринарна кл?н?ка' запущена.
-
--------------------------------------------
- МЕНЮ УПРАВЛ?ННЯ:
- 1. Наповнити базу тестовими даними
- 2. Переглянути зв?т прийом?в
- 3. Видалити вс? дан?
- 4. Вих?д
--------------------------------------------
+--- ВЕТЕРИНАРНА КЛ?Н?КА ---
+1. Завантажити дан? з CSV файлу
+2. Переглянути вс? записи
+3. Видалити вс? записи
+4. Вих?д
 Ваш виб?р: 4
->>> Завершення роботи...
-груд. 11, 2025 8:22:00 ПП org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl$PoolState stop
-INFO: HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5432/vet_clinik]
-[INFO] ------------------------------------------------------------------------
-[INFO] BUILD SUCCESS
-[INFO] ------------------------------------------------------------------------
-[INFO] Total time:  01:09 min
-[INFO] Finished at: 2025-12-11T20:22:00+02:00
-[INFO] ------------------------------------------------------------------------
+2025-12-11 23:50:45.598  INFO 25620 --- [ionShutdownHook] org.mongodb.driver.connection            : Closed connection [connectionId{localValue:3, serverValue:47}] to localhost:27017 because the pool has been closed.
+PS D:\НАВЧАННЯ\Бази даних\veterinary-app-25-postgres\veterinary-app-25-postgres> 
 ```
