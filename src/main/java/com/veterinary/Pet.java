@@ -22,7 +22,6 @@ public class Pet {
 
     public Pet() {}
 
-    // Конструктор, якого не вистачало
     public Pet(Owner owner, String name, String species) {
         this.owner = owner;
         this.name = name;
