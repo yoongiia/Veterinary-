@@ -3,7 +3,7 @@ package com.veterinary;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "veterinary-records") // Перевірте назву колекції в Compass!
+@Document(collection = "veterinary-records") 
 public class PetRecord {
 
     @Id
