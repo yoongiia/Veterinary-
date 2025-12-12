@@ -18,7 +18,6 @@ public class Veterinarian {
 
     public Veterinarian() {}
 
-    // Конструктор, якого не вистачало
     public Veterinarian(String fullName, Integer experienceYears) {
         this.fullName = fullName;
         this.experienceYears = experienceYears;
