@@ -55,7 +55,6 @@ public class VeterinaryApplication implements CommandLineRunner {
     }
 
     private void addRecordsFromCsv() {
-        // Файл має називатися точно як тут (перевірте папку resources!)
         try (CSVReader reader = new CSVReader(new InputStreamReader(
                 getClass().getClassLoader().getResourceAsStream("veterinary_data.csv")))) {
             
@@ -66,11 +65,10 @@ public class VeterinaryApplication implements CommandLineRunner {
                 return;
             }
 
-            rows.remove(0); // Видаляємо перший рядок (заголовки)
+            rows.remove(0); 
 
             List<PetRecord> records = new ArrayList<>();
             for (String[] row : rows) {
-                // Створюємо об'єкт, передаючи 10 значень з CSV
                 PetRecord record = new PetRecord(
                         row[0], // animalOwner
                         row[1], // animalAndSpecies
