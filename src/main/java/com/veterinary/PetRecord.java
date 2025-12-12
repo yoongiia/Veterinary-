@@ -45,18 +45,18 @@ public class PetRecord {
 
     @Override
     public String toString() {
-        return "Запис візиту {" +
-                "id='" + id + '\'' +
-                ", Власник='" + animalOwner + '\'' +
-                ", Тварина='" + animalAndSpecies + '\'' +
-                ", Лікар='" + veterinarian + '\'' +
-                ", Дата='" + dateOfAdmission + '\'' +
-                ", Час='" + receptionHours + '\'' +
-                ", Діагноз='" + diagnosisAndTreatment + '\'' +
-                ", Адреса='" + addressOwner + '\'' +
-                ", Вакцинація='" + vaccination + '\'' +
-                ", Стаж лікаря='" + veterinaryExperience + '\'' +
-                ", Контакти='" + contacts + '\'' +
-                '}';
-    }
+    return "Запис візиту {\n" + 
+           "id=\"" + id + "\"\n" +
+           "Власник=\"" + animalOwner + "\"\n" +
+           "Тварина=\"" + animalAndSpecies + "\"\n" +
+           "Лікар=\"" + veterinarian + "\"\n" +
+           "Дата=\"" + dateOfAdmission + "\"\n" +
+           "Час=\"" + receptionHours + "\"\n" +
+           "Діагноз=\"" + diagnosisAndTreatment + "\"\n" +
+           "Адреса=\"" + addressOwner + "\"\n" +
+           "Вакцинація=\"" + vaccination + "\"\n" +
+           "Стаж лікаря=\"" + veterinaryExperience + "\"\n" +
+           "Контакти=\"" + contacts + "\"\n" +
+           "}"; 
 }
+    }
