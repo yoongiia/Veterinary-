@@ -28,21 +28,16 @@ public class AppointmentInfoDTO {
         this.isVaccinated = isVaccinated;
     }
 
-    // Допоміжний метод: Склеює ПІБ (Прізвище І.Б.)
     private String getOwnerFullName() {
         return lastName + " " + firstName + " " + middleName;
     }
 
-    // Допоміжний метод: Склеює Тварину (Кличка (вид))
     private String getPetFull() {
         return petName + " (" + species + ")";
     }
-
-    // Допоміжний метод: Склеює Адресу в один рядок
     private String getAddressFull() {
         String apt = (apartment != null) ? ", " + apartment : "";
         String addr = city + ", " + street + ", " + house + apt;
-        // Обрізаємо, якщо адреса занадто довга для таблиці
         return addr.length() > 30 ? addr.substring(0, 27) + "..." : addr;
     }
 
@@ -51,7 +46,6 @@ public class AppointmentInfoDTO {
         String diagShort = diagnosis.length() > 30 ? diagnosis.substring(0, 27) + "..." : diagnosis;
         String ownerShort = getOwnerFullName().length() > 25 ? getOwnerFullName().substring(0, 22) + "..." : getOwnerFullName();
         
-        // Формат таблиці (ширина колонок підібрана під ваші заголовки)
         return String.format("| %-25s | %-18s | %-25s | %-12s | %-8s | %-30s | %-30s | %-10s | %-5s | %-15s |",
                 ownerShort,         // Власник тварини
                 getPetFull(),       // Тварина та вид
