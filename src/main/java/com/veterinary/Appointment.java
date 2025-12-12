@@ -34,7 +34,6 @@ public class Appointment {
 
     public Appointment() {}
 
-    // Конструктор, якого не вистачало
     public Appointment(Pet pet, Veterinarian veterinarian, LocalDate appointmentDate, LocalTime appointmentTime, String diagnosisTreatment, Boolean isVaccinated) {
         this.pet = pet;
         this.veterinarian = veterinarian;
